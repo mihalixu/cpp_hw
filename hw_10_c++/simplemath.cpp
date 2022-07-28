@@ -1,8 +1,8 @@
 #include <iostream>
-
+using namespace std;
 
 
 int main(){
-    std::cout << 1+5*6 << std::endl;
+    cout << 1+5*6 << endl;
     return 0;
 }
