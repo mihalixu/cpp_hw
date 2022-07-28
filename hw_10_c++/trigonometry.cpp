@@ -4,6 +4,6 @@
 #include <iostream>
 
 int main() {
-  // TODO: implement your solution here
+  std::cout << "radi" << std::endl;
   return 0;
 }
