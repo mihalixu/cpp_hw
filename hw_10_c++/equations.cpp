@@ -1,10 +1,14 @@
 #include <cmath>
 #include <iostream>
 #include <utility>
+using std::pair;
 
 
-std::pair<double, double> quadratic(double a, double b, double c) {
-  // TODO: implement this function
+pair<double, double> quadratic(double a, double b, double c) {
+  pair<double,double> quad;
+  quad.first = (-b + sqrt(b*b-4*a*c)) / (2*a);
+  quad.second = (-b - sqrt(b*b-4*a*c)) / (2*a);
+  return quad;
 }
 
 

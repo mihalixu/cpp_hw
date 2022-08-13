@@ -3,8 +3,22 @@
 #include <iomanip>
 #include <iostream>
 
+double surface_cylinder(double radius, double height){
+   return 2*M_PI*radius*height+2*M_PI*pow(radius,2);
+}
 
-// TODO: implement the missing functions
+double volume_cylinder(double radius, double height){
+   return M_PI*radius*radius*height;
+}
+
+double surface_cone(double radius, double height){
+   return M_PI*radius*(radius+sqrt(pow(height,2)+pow(radius,2)));
+}
+
+double volume_cone(double radius, double height){
+   return M_PI*pow(radius,2)*(height/3);
+}
+
 
 int main(int argc, char** argv) {
   if (argc != 3) {
