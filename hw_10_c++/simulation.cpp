@@ -14,9 +14,10 @@ bool shoot();
  * of pi.
  */
 double simulate_pi(int iterations) {
+
 }
 
-
+ 
 /**
  * Shoot a dart at a 2x2 square and return true iif the dart hit inside the
  * inscribed circle.
