@@ -1,9 +1,15 @@
 #include <cmath>
 #include <cstdlib>
 #include <iostream>
+#include <math.h>
 
+double interest(double capital, double rate, int years=1, double tax=0){
+  return capital*pow((1+rate*(1-tax)),years)-capital;
+}
 
-// TODO: implement interest(.) and terminal_value(.)
+double terminal_value(double capital, double rate, int years=1, double tax=0){
+  return capital*pow((1+rate*(1-tax)),years);
+}
 
 
 int main(int argc, char** argv) {
@@ -18,6 +24,7 @@ int main(int argc, char** argv) {
   switch (argc) {
   case 5:
     tax = std::atof(argv[4]);
+    [[fallthrough]];
   case 4:
     years = std::atoi(argv[3]);
   }
