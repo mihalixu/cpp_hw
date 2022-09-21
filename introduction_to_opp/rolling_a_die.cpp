@@ -7,6 +7,7 @@ using std::cout;
 using std::vector;
 using std::fill;
 using std::endl;
+using std::cin;
 
 class rolling_die{
 private:
